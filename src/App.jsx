@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import MyCafe from './Components/MyCafe/MyCafe'
+import HeaderContent from './Components/HeaderContent/HeaderContent'
+import BodyContent from './Components/BodyContent/BodyContent'
+import FooterContent from './Components/FooterContent/FooterContent'
 
 
 function App() {
@@ -7,9 +9,11 @@ function App() {
 
   return (
     <>
-   <h1 className='heading'>Helloo</h1>
-   <MyCafe></MyCafe>
- 
+    <div id='wrapper'>
+    <HeaderContent/>
+    <BodyContent/>
+    <FooterContent/>
+    </div>
    </>
   )
 }
